@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  background-color: #f2f2f2;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formWrapper > button {
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0.5rem 1.89rem;
+  margin: 0 0.75rem;
+}
+
+.formWrapper > button:hover {
+  background-color: #5bc0de;
+}
+
+.formWrapper > input {
+  outline: none;
+  border: none;
+  padding: 0 12px;
+}
+
+.mainWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainWrapper > .content {
+  background-color: #0275d8;
+  color: #fff;
+  width: 300px;
+  height: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentWrapper {
+  display: flex;
+  margin: 0 8px;
+  justify-content: space-between;
+}
+
+.contentWrapper:nth-child(2) {
+  margin: 12px 8px;
+}
+
+.header {
+  background-color: #292b2c;
+  margin: 0 0;
+  padding: 10px 0;
+}
+
+.header > h2 {
+  margin: 0 8px;
 }
